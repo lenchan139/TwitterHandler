@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
                 outUrl = "twitter://user?screen_name=" + data1 + "&src=mobile";
             }else if(data1.indexOf(temp1) >=0 ){
                 String tempOut = data1.substring(data1.indexOf(temp1)+temp1.length());
+
+                int toCount = tempOut.indexOf("/");
+                if(toCount!=-1){
+                    tempOut=tempOut.substring(0,toCount);
+                }
+                Log.v("tempOut",tempOut);
                 outUrl = "twitter://status?status_id=" +tempOut +"&src=mobile";
             }else{
                 outUrl = null;
