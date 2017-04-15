@@ -7,8 +7,8 @@ android {
         applicationId "org.lenchan139.twitterhandler"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 3
-        versionName 'VERSION 3'
+        versionCode 4
+        versionName 'VERSION 4'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

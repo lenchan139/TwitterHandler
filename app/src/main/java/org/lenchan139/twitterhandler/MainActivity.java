@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
             //startActivity(intent);
             String outUrl = null;
             if(inURL.lastIndexOf("/") == inURL.length()-1){ inURL.substring(0,inURL.length()-1);}
+            if (inURL.indexOf("?") >= 1) {inURL.substring(0,inURL.indexOf("?"));}
             String temp99 = "mobile.twitter.com/";
             String data1 = inURL.substring(inURL.indexOf(temp99)+temp99.length());
             String temp1 = "/status/";
